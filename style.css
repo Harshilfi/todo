@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+:root{
+    --raisinBlack: #191919;
+    --iciterine:#fcff4b;
+    --colombianBlue:#cad8de;
+    --darkSlate:#92a3aa;
+    --shadow:#4c5b62;
+}
+body{
+    text-align: center;
+    font-family:'Poppins' ;
+    animation-name: animation1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+    background: linear-gradient(357deg, #f0f3da, #465256, #191919);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+
+}
+ul{
+    list-style-type: none;  
+}
+
+#container{
+    background-color: var(--colombianBlue);
+    margin:5% auto;
+    padding:1% 10%;
+    border-radius: 15px;
+    border: 2px solid var(--raisinBlack);
+    width:50%;
+    box-shadow: 0px 8px var(--raisinBlack);
+}
+h1{
+    margin-bottom: 50px;
+    font-size: 4em;
+    font-weight: 900;
+    color: var(--raisinBlack);
+}
+input{
+    padding:3px 10px ;
+    font-family: 'Poppins';
+    border: 2px solid var(--raisinBlack);
+    border-radius: 5px;
+    margin: 0 5px;
+    width: 40%;
+}
+
+.donebt{
+    padding: 3px 10px;
+    border: 2px solid var(--raisinBlack);
+    border-radius: 100px;
+    background-color: var(--iciterine);
+    margin-bottom: 20px;
+    font-size: 0.6em;
+    font-family:'Poppins' ;
+    font-weight: 500;
+    box-shadow: 0px 3px var(--raisinBlack);
+    transition: all linear 100ms;
+}
+#submit:disabled{
+    background-color: var(--colombianBlue);
+}
+#submit{
+    margin-top: 10px;
+    background-color: #fcff4b;
+    box-shadow: 0px 3px var(--raisinBlack);
+    transition: all linear 100ms;
+    width: fit-content;
+}
+#submit:active,.donebt:active{
+    box-shadow: 0px 4px var(--shadow) inset;
+    translate:0px 1px ;
+}
+
+#task-container{
+    margin:50px 0;
+    padding: 10px;
+    background-color: var(--darkSlate);
+    text-align: center;
+    border: 2px solid var(--raisinBlack);
+    border-radius: 15px;
+    font-weight: 900;
+    box-shadow: 0px 8px var(--shadow) inset;
+}
+@keyframes animation1{
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: #fcff4b;
+    }
+}
